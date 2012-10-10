@@ -1,4 +1,3 @@
-
 <!--
 This example is a proof of concept, for how to use the Yelp v2 API with javascript.
 You wouldn't actually want to expose your access token secret like this in a real application.
@@ -16,12 +15,12 @@ var auth = {
   //
   // Update with your auth tokens
   //
-  consumerKey: "YOUR_CONSUMER_KEY",
-  consumerSecret: "YOUR_CONSUMER_SECRET",
-  accessToken: "YOUR_TOKEN",
+  consumerKey: "aof11uDH-Lbh4oJjaEHrkg",
+  consumerSecret: "8JPWl3K-m4teuifDJN1dYdIQvGA",
+  accessToken: "9xYlOxkGg7gnW76K5KAAcu16r06xPW2H",
   // This example is a proof of concept, for how to use the Yelp v2 API with javascript.
   // You wouldn't actually want to expose your access token secret like this in a real application.
-  accessTokenSecret: "YOUR_TOKEN_SECRET",
+  accessTokenSecret: "tFPLngu5SqrUf91g10lqq5U_Vtk",
   serviceProvider: { 
     signatureMethod: "HMAC-SHA1"
   }
@@ -40,7 +39,7 @@ parameters.push(['oauth_token', auth.accessToken]);
 parameters.push(['oauth_signature_method', 'HMAC-SHA1']);
 
 var message = { 
-  'action': 'http://api.yelp.com/v2/business/bay-to-breakers-12k-san-francisco',
+  'action': 'http://api.yelp.com/v2/business/air-express-cab-berkeley-4',
   'method': 'GET',
   'parameters': parameters 
 };
